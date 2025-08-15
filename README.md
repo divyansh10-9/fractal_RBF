@@ -59,7 +59,8 @@ The raw file (`Ground Water Level_Wasahermenpet.xlsx`) was downloaded from the *
 | Fractalized RBF          | **0.0997** |
 
 **✅ Error Reduction:**  
-The fractalized RBF reduced the Mean Squared Error by: approx 12.54
+The fractalized RBF reduced the Mean Squared Error by: approx 12.54 percent
+
 
 
 
