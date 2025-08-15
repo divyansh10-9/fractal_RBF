@@ -41,10 +41,6 @@ The raw file (`Ground Water Level_Wasahermenpet.xlsx`) was downloaded from the *
 
 ### Traditional Gaussian RBF Network
 - Hidden layer: **RBF neurons** with Gaussian kernel  
-- Activation:  
-  \[
-  \phi(x, c) = \exp(-\gamma \|x - c\|^2)
-  \]
 - Parameters:
   - Neurons: `96`
   - Gamma: `0.5`
@@ -54,13 +50,7 @@ The raw file (`Ground Water Level_Wasahermenpet.xlsx`) was downloaded from the *
 ### Fractalized RBF Network
 - Same architecture as Gaussian RBF  
 - Replaces the Gaussian kernel with **fractal-interpolated kernel**:
-  \[
-  \phi_\alpha(r) = f_\alpha(\sqrt{\gamma} \cdot r)
-  \]
-  where \( f_\alpha \) is derived from a **fractal interpolation function** using piecewise transformations.
-
----
-
+ 
 ## 📈 Results
 
 | Model Type               | Test MSE |
@@ -69,16 +59,13 @@ The raw file (`Ground Water Level_Wasahermenpet.xlsx`) was downloaded from the *
 | Fractalized RBF          | **0.0997** |
 
 **✅ Error Reduction:**  
-The fractalized RBF reduced the Mean Squared Error by:
-\[
-\frac{0.1140 - 0.0997}{0.1140} \times 100 \approx 12.54\%
-\]
+The fractalized RBF reduced the Mean Squared Error by: approx 12.54
 
 
 
 ---
 
 ## 🚀 How to Run
-1. Install dependencies:
+Install dependencies:
    ```bash
    pip install numpy pandas matplotlib seaborn scikit-learn scipy openpyxl
